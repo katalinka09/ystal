@@ -1,6 +1,8 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.auth.views import LogoutView
+
 from django.urls import include, path
 
 urlpatterns = [
@@ -10,7 +12,8 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('users/', include('users.urls')),
     path('', include('store.urls')),
-    path('', include('django.contrib.auth.urls'))
+    path('', include('django.contrib.auth.urls')),
+    path('auth/logout/', LogoutView.as_view(), name='logout')
 ]
 
 if settings.DEBUG:

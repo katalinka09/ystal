@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'OnlineStore.urls'
+ROOT_URLCONF = 'KataLEna.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'OnlineStore.wsgi.application'
+WSGI_APPLICATION = 'KataLEna.wsgi.application'
 
 
 # Database

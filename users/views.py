@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
-from OnlineStore.settings import TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
+from KataLEna.settings import TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
 from checkout.models import Order
 from .forms import CreationForm, FeedbackForm
 from .models import Feedback
